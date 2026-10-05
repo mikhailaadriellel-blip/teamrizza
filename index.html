@@ -1,0 +1,136 @@
+<html>
+<head>
+<title>HAPPY TEACHER'S DAY, TEAM RIZZA!</title>
+<style>
+body {
+background-color: #B8A99A ;
+color: #795548;
+font-family: "Times New Roman", serif;
+text-align: center;
+margin: 0;
+padding: 0;
+}
+.page {
+min-height: 100vh;
+box-sizing: border-box;
+padding: 100px 25px;
+}
+h1 {
+font-size: 45px;
+margin-bottom: 25px;
+}
+p {
+font-size: 21px;
+line-height: 1.6;
+}
+.welcome-box {
+background-color: #B8A99A;
+max-width: 700px;
+padding: 50px 30px;
+margin: auto;
+border: 3px solid #795548;
+border-radius: 15px;
+}
+.welcome-box h1 {
+color: #795548;
+}
+button {
+background-color: #795548;
+color: #B8A99A;
+padding: 15px 35px;
+border: none;
+border-radius: 8px;
+font-size: 20px;
+font-family: "Times New Roman:, serif;
+cursor: pointer;
+margin-top: 20px;
+}
+button:hover {
+background-color: #B8A99A;
+}
+#secondPage {
+display: none;
+}
+.letter {
+background-color: #B8A99A;
+color: #795548;
+max-width: 750px;
+margin: auto;
+padding: 45px;
+border: 3px solid #795548;
+border-radius: 15px;
+text-align: left;
+}
+.letter h2 {
+text-align: center;
+font-size: 32px;
+margin-bottom: 35px;
+}
+.letter p {
+font-size: 19px;
+line-height: 1.8;
+}
+.signature {
+margin-top: 30px;
+}
+.back-button {
+background-color: #795548;
+color: #B8A99A;
+border: none;
+padding: 12px 25px;
+font-family: "Times New Roman", serif;
+font-size: 17px;
+border-radius: 8px;
+cursor: pointer;
+display: block;
+margin: 30px auto 0;
+}
+</style>
+</head>
+<body>
+<!-- FIRST PAGE-->
+<div id="firstPage" class="page">
+<div class="welcome-box">
+<h1>Hello, welcome ma'am ced!</h1>
+<p>October 5, 2026</p>
+<p>Click mo ma'am yung button sa baba</p>
+<button class="button" onclick="openLetter()">
+Open your surprise
+</button>
+</div>
+</div>
+<!-- SECOND PAGE -->
+<div id="secondPage" class="page">
+<div class="letter">
+<h1>Happy Teacher's Day!</h1>
+<center>
+<img src="merced.jpg" height="200" width="200">
+</center>
+<p>To our co-adviser, listener, and our bestfriend,</p>
+<p>Happy teacher's day po ma'am ced! us Darwinians are very blessed to have a unique, dedicated, understanding, and positive co-adviser like you.</p>
+<p>Pumaldo talaga kaming darwin sainyo ma'am ni sir Leo this year kasi mas masaya po school year experience namin as 8th graders kasi may second parents po kaming nde strict :3</p>
+<p>Napaka grateful 'ko po sainyo kasi hindi lang po ako sa lessons niyo natututo, pati na rin sa mga pangaral mo po sa section namin</p>
+<p>Xori ma'am hindi long message letter 'ko HAHAHA pero mahal na mahal ka namin ma'am! :D</p>
+<p>Happy Teacher's Day, Ma'am!
+</p>
+<p class="signature">
+Coded by Adrielle
+</p>
+<button class="back-button" onclick="goBack()">
+< back
+</button>
+</div>
+</div>
+<!-- JAVASCRIPT -->
+<script>
+function openLetter() {
+document.getElementById("firstPage").style.display="none";
+document.getElementById("secondPage").style.display="block";
+}
+function goBack() {
+document.getElementById("secondPage").style.display="none";
+document.getElementById("firstPage").style.display="block";
+}
+</script>
+</body>
+</html>
